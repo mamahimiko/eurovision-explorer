@@ -1,0 +1,9 @@
+.card {
+    width: 300px;
+    height: 250px;
+    background-color: azure;
+}
+
+.cardActions {
+    justify-content: space-around;
+}

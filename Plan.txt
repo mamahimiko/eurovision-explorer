@@ -1,0 +1,32 @@
+**Goal**
+- User can view information about countries and the songs which was sung by mother tongue in Euro vision
+- User can view information about language and related songs
+- Users can save their favorite songs.
+
+**API**
+- React Leaflet
+- Eurovision API
+- Sportify API 
+
+**Pages**
+- Home
+- MapPage
+- LanguagePage
+- FavoritePage
+
+**Components**
+- Header
+- Footer
+- Navigation
+- Map
+- TripCard
+- SongCard
+- SideBar (language page)
+
+**Data**
+- countryList (id, name, latLng, description, image)
+
+**State**
+- MapPage: When the user clicks a map pin, country information is stored in selectedCountry, then countryCard and songCard of selectedCountry will be shown.
+- LnguagePage: When the user click the language name from sidebar, language information is stored in searchedCountry,  breweryCard of selectedCountry is displayed.
+- FavoritePage: When the user clicks the heart icon on a BreweryCard, card information is stored addFavorite, then the card is displayed on the Passport Page.

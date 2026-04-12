@@ -1,0 +1,108 @@
+.infoSection {
+    display: flex;
+    flex-direction: column;
+    background-image: var(--image-url);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 2rem;
+    text-align: center;
+    color: var(--white);
+    gap: 2rem;
+    border-radius: 20px;
+}
+
+.countryName {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    margin: 10px;
+}
+
+.textCard {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(100, 99, 99, 0.3);
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 500px;
+    margin: 1rem;
+
+}
+
+.textCard p {
+    margin: 0.5rem 0;
+    opacity: 0.9;
+}
+
+.textCard p:nth-child(1) {
+    font-weight: 600;
+}
+
+
+.metaRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.metaRow span {
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.15);
+    font-size: 0.9rem;
+}
+
+
+h3 {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+}
+
+li {
+    margin-top: 0.3rem;
+}
+
+.eurovisionTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--tertiary-color);
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+@media screen and (min-width: 799px) {
+
+
+    .infoContainer {
+        margin: 0 auto;
+    }
+
+    .countryName {
+        margin: 2rem;
+        font-size: 4rem;
+    }
+
+
+}

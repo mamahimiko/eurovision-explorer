@@ -1,0 +1,148 @@
+.heroSection {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #0b0c1e;
+
+}
+
+.heroContent {
+    padding: 20px;
+    max-width: 90vw;
+}
+
+.mainTitle {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #ff00ff, #ffcc00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subTitle {
+    font-size: 1rem;
+    color: var(--white);
+    line-height: 1.6;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 4rem;
+}
+
+.btn {
+    padding: 15px 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.btnPrimary {
+    background-color: var(--secondary-color);
+    border: none;
+    color: #fff;
+}
+
+.btnSecondary {
+    background-color: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.aboutSection {
+    padding: 4rem 4rem;
+    text-align: center;
+}
+
+.aboutTitle {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.aboutSection p {
+    color: var(--text-color);
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 3rem 0;
+}
+
+.featureItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+    padding: 10px;
+    border: solid var(--bg-color);
+    border-radius: 10px;
+    height: 180px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.featureItem h3 {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.featureItem p {
+    color: var(--text-color);
+}
+
+.closing {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--highlight-color);
+}
+
+
+@media screen and (min-width: 799px) {
+
+
+    .mainTitle {
+        font-size: 3.5rem;
+        font-weight: 800;
+    }
+
+    .subTitle {
+        font-size: 1.5rem;
+    }
+
+    .features {
+        flex-direction: row;
+
+    }
+
+    .featureItem {
+        height: 200px;
+    }
+
+
+    .featureItem {
+        width: 30%;
+        margin: 30px
+    }
+
+    .btn {
+        font-size: 1.1rem;
+    }
+
+}

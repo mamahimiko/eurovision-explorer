@@ -1,0 +1,129 @@
+.sidebar {
+    margin: auto;
+}
+
+.hamburgermenu_container {
+    margin-left: auto;
+    padding: 20px;
+    size: 1rem;
+    z-index: 100;
+}
+
+
+.menu {
+    background-color: var(--tertiary-color);
+    position: fixed;
+    top: 0;
+    width: 50%;
+    left: -55%;
+    height: 100vh;
+    padding: 5%;
+    transition: left linear 0.3s;
+    z-index: 99;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    visibility: hidden;
+    overflow-y: auto;
+}
+
+.menu.active {
+    left: 0;
+    height: 100vh;
+    overscroll-behavior: contain;
+    visibility: visible;
+}
+
+.menu.active::before {
+    content: ' ';
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    overflow: hidden;
+    overscroll-behavior: contain;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+
+.menu li {
+    color: var(--white);
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.menu li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--secondary-color);
+    transition: transform 0.25s ease-out;
+    transform-origin: bottom center;
+}
+
+.menu li:hover::after {
+    transform-origin: bottom center;
+    transform: scaleX(1);
+}
+
+.close_button {
+    font-size: 1.5rem;
+    padding: 15px 0;
+    display: flex;
+    justify-content: end;
+    color: var(--primary-color);
+}
+
+
+@media screen and (min-width: 799px) {
+    .sidebar {
+        margin: 4rem
+    }
+
+    .hamburgermenu_container {
+        display: none;
+    }
+
+    .menu,
+    .menu.active {
+        visibility: visible;
+        position: static;
+        height: auto;
+        width: auto;
+        left: 0;
+        padding: 0;
+        background-color: transparent;
+        box-shadow: none;
+        align-items: end;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .menu li {
+        color: var(--text-colour);
+    }
+
+
+    .menu a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .close_button {
+        display: none;
+    }
+}
