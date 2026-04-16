@@ -1,6 +1,7 @@
 .infoSection {
     display: flex;
     flex-direction: column;
+    height: 100vh;
     background-image: var(--image-url);
     height: 100%;
     background-size: cover;

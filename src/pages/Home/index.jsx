@@ -1,7 +1,13 @@
 import styles from "./home.module.css"
-import { Link, useSearchParams } from "react-router";
+import { Link } from "react-router";
+import { threeYears } from "../../data/data";
 
 const Home = () => {
+
+    const reversedYears = [...threeYears].reverse();
+    console.log(reversedYears.length - 1)
+
+
     return (
         <div className={styles.homeContainer}>
             <section className={styles.heroSection}>
@@ -30,7 +36,13 @@ const Home = () => {
                     <div className={styles.features}>
                         <div className={styles.featureItem}>
                             <h3>Listen</h3>
-                            <p>Experience the high-energy performances from the 2024 Grand Final and beyond.</p>
+                            <p>Experience the high-energy performances from the Grand Final in
+                                {reversedYears.map((year, index) => (
+                                    <span>
+                                        {(reversedYears.length - 1 === index) ? ` and ${year}` : ` ${year},`}
+                                    </span>
+                                ))}.
+                            </p>
                         </div>
                         <div className={styles.featureItem}>
                             <h3>Visualize</h3>
