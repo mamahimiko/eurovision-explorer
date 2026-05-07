@@ -1,6 +1,6 @@
 import styles from './countriesInfomation.module.css'
-import useFetchForUnsplush from '../Hooks/useFetchForUnsplush'
-import useFetch from "../Hooks/useFetchForLanguage"
+import useFetchForUnsplush from '../../Hooks/useFetchForUnsplush'
+import useFetch from "../../Hooks/useFetchForLanguage"
 import SongCard from "../SongCard"
 import { countryCodes } from '../../data/countryCodes'
 import { threeYears } from "../../data/data";

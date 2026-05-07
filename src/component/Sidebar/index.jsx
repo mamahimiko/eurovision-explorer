@@ -32,7 +32,7 @@ const Sidebar = ({ languages, onSelectLanguage }) => {
                 </div>
                 <h3>Europa Languages</h3>
                 <ul>{languages && languages.map((lang, index) => (
-                    <li key={index} onClick={() => navigate(`/languages?lang=${lang}`)}>
+                    <li key={index} onClick={() => { showMobileMenu(); navigate(`/languages?lang=${lang}`) }}>
                         {lang.charAt(0).toUpperCase() + lang.slice(1)}
                     </li>
                 ))}

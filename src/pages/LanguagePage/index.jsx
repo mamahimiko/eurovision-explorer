@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { Outlet, useMatch, useSearchParams } from "react-router"
 import styles from "./languagePage.module.css"
-import useFetch from "../../component/Hooks/useFetchForLanguage"
+import useFetch from "../../Hooks/useFetchForLanguage"
 import SongCard from "../../component/SongCard"
 import Sidebar from "../../component/Sidebar"
 import { threeYears } from "../../data/data";

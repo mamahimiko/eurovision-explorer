@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import useFetch from "../../component/Hooks/useFetchForLanguage"
+import useFetch from "../../Hooks/useFetchForLanguage"
 import { useParams, useSearchParams, useOutletContext } from "react-router"
 import Youtube from "react-youtube"
 import styles from "./songPage.module.css"

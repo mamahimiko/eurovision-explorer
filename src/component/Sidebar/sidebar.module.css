@@ -14,11 +14,11 @@
     background-color: var(--tertiary-color);
     position: fixed;
     top: 0;
-    width: 50%;
-    left: -55%;
+    width: 70%;
+    left: -80%;
     height: 100vh;
     padding: 5%;
-    transition: left linear 0.3s;
+    transition: left ease-in-out 0.3s;
     z-index: 99;
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
