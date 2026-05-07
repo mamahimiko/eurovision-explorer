@@ -9,7 +9,7 @@ const PinsPage = () => {
         <div className={styles.pinsPage}>
             <h2 className={styles.title}>Here is your pins!</h2>
             <div className={styles.cardsContainer}>
-                {getCardInfo.map((item, index) => (
+                {getCardInfo?.map((item, index) => (
                     <SongCard key={index} {...item} />
                 ))}
             </div>
